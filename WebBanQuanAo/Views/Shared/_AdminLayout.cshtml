@@ -4,14 +4,6 @@
 }
 
 <!DOCTYPE html>
-
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
 <html>
 <head>
     <title>Admin</title>
@@ -29,22 +21,22 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <link href="~/css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome icons -->
     <!-- js-->
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/modernizr.custom.js"></script>
+    <script src="~/js/jquery-1.11.1.min.js"></script>
+    <script src="~/js/modernizr.custom.js"></script>
     <!--webfonts-->
     <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <!--//webfonts-->
     <!--animate-->
-    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-    <script src="js/wow.min.js"></script>
+    <link href="~/css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="~/js/wow.min.js"></script>
     <script>
 		 new WOW().init();
     </script>
     <!--//end-animate-->
     <!-- Metis Menu -->
-    <script src="js/metisMenu.min.js"></script>
-    <script src="js/custom.js"></script>
-    <link href="css/custom.css" rel="stylesheet">
+    <script src="~/js/metisMenu.min.js"></script>
+    <script src="~/js/custom.js"></script>
+    <link href="~/css/custom.css" rel="stylesheet">
     <!--//Metis Menu -->
 </head>
 <body class="cbp-spmenu-push">
@@ -144,9 +136,9 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                 <!--toggle button end-->
                 <!--logo -->
                 <div class="logo">
-                    <a href="index.html">
-                        <h1>NOVUS</h1>
-                        <span>AdminPanel</span>
+                    <a href="@Url.Action("Index","Home")">
+                        <h1>Shop</h1>
+                        <span>Quản trị</span>
                     </a>
                 </div>
                 <!--//logo-->
@@ -350,16 +342,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         <!-- //header-ends -->
         <!-- main content start-->
         <div id="page-wrapper">
-            @*<div class="main-page">
-                <h3 class="title1">Blank Page</h3>
-                <div class="blank-page widget-shadow scroll" id="style-2 div1">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
-                    </p>
-                </div>
-            </div>*@
-            @*@RenderBody();*@
+            @RenderBody();
         </div>
         <!--footer-->
         <div class="footer">
@@ -388,10 +371,10 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			}
     </script>
     <!--scrolling js-->
-    <script src="js/jquery.nicescroll.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="~/js/jquery.nicescroll.js"></script>
+    <script src="~/js/scripts.js"></script>
     <!--//scrolling js-->
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.js"></script>
+    <script src="~/js/bootstrap.js"></script>
 </body>
 </html>

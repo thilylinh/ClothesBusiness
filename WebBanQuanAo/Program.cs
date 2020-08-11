@@ -22,7 +22,7 @@ namespace WebBanQuanAo
                 try
                 {
                     var context = services.GetRequiredService<BusinessContext>();
-                    
+                    SeedData.Initialize(context);
                 }
                 catch (Exception ex)
                 {
